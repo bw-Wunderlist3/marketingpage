@@ -59,12 +59,12 @@ html{
 body{
     font-size: 1.8rem;
     line-height: 1.5;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #4f4f4f;
 }
 h1, h2, h3, h4, h5, h6{
     letter-spacing: 2px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 h1{
     font-size: 8rem;
@@ -95,18 +95,21 @@ nav{
 }
 .login{
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
+    width: 20%;
+    
 }
 .signUpNav{
     text-align: center;
-    background-color: #0E7C7B;
-    /* margin-left: 30%;
-    margin-right: 0; */
+    background: #0E7C7B;
+    margin: 5%;
+    padding: 5%;
 }
 .signInNav{
     text-align: center;
-    /* margin-right: 2%;
-    margin-left: 0; */
+    background: #F0F0F0;
+    margin: 5%;
+    padding: 5%;
 }
 
 /* Main Title*/
@@ -125,4 +128,47 @@ nav{
 }
 .mainTitle h1{
     color: white;
+}
+
+/*Features*/
+
+.features{
+    display: flex;
+    flex-wrap: nowrap;
+    background:#0E7C7B;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+i{
+    text-align: center;
+    padding:5%;
+}
+.features h3{
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 5%;
+}
+/*sign up*/
+.signUp{
+    text-align: center;
+    padding: 5%;
+}
+
+/*Reviews*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.review1{
+  margin: 2%;
+}
+
+.review2{
+    margin: 2%;
+}
+
+.review3{
+    margin: 2%;
 }
