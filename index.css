@@ -50,6 +50,9 @@ max-width:100%;
 }
 
 /* General CSS*/
+*{
+    border: 1px aquamarine solid;
+}
 html{
     font-size:62.5%;
 }
@@ -79,5 +82,47 @@ h3{
 /*header*/
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.aboutUsNav{
+    text-align: center;
+    padding-top: 1.5%;
+}
+.wanderListNav{
+    text-align: center;
+    /* margin-left: 5%;
+    padding-left: 30% */
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
+.signUpNav{
+    text-align: center;
+    background-color: #0E7C7B;
+    /* margin-left: 30%;
+    margin-right: 0; */
+}
+.signInNav{
+    text-align: center;
+    /* margin-right: 2%;
+    margin-left: 0; */
+}
+
+/* Main Title*/
+.mainHeroImage{
+    display: flex;
+    justify-content: center;
+    background-image: url('Images/washingdishes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+}
+.mainTitle{
+    text-align: center;
+    margin-top: 15%;
+}
+.mainTitle h1{
+    color: white;
 }
