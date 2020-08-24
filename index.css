@@ -50,9 +50,7 @@ max-width:100%;
 }
 
 /* General CSS*/
-*{
-    border: 1px aquamarine solid;
-}
+
 html{
     font-size:62.5%;
 }
@@ -89,10 +87,12 @@ nav{
 .aboutUsNav{
     text-align: center;
     padding-top: 1.5%;
+    margin-top: 2%;
 }
 .wanderListNav{
     text-align: center;
     padding-left:10%;
+    margin-top: 2%;
     /* margin-left: 5%;
     padding-left: 30% */
 }
@@ -164,11 +164,12 @@ i{
 }
 
 .signUp h3{
-    background: #0E7C7B;;
+    border: 3px #0E7C7B solid;
     border-radius: 8px;
     width:30%;
     margin-left: 35%;
     margin-right: 65%;
+    color: #362E34;
 }
 
 /*Reviews*/
