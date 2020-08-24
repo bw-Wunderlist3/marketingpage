@@ -50,9 +50,9 @@ max-width:100%;
 }
 
 /* General CSS*/
-*{
+/* *{
     border: 1px aquamarine solid;
-}
+} */
 html{
     font-size:62.5%;
 }
@@ -60,7 +60,7 @@ body{
     font-size: 1.8rem;
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
-    color: #4f4f4f;
+    color: #362E34;
 }
 h1, h2, h3, h4, h5, h6{
     letter-spacing: 2px;
@@ -78,7 +78,9 @@ h3{
     font-size: 3rem;
     color:  #362E34;
 }
-
+a{
+  text-decoration: none;  
+}
 /*header*/
 nav{
     display: flex;
@@ -90,6 +92,7 @@ nav{
 }
 .wanderListNav{
     text-align: center;
+    padding-left:10%;
     /* margin-left: 5%;
     padding-left: 30% */
 }
@@ -97,6 +100,7 @@ nav{
     display: flex;
     justify-content: flex-end;
     width: 20%;
+    padding-left: 5%;
     
 }
 .signUpNav{
@@ -163,12 +167,24 @@ footer{
 
 .review1{
   margin: 2%;
+  background: #F0F0F0;
+  color: #362E34;
 }
 
 .review2{
     margin: 2%;
+    background: #F0F0F0;
+    color: #362E34;
 }
 
 .review3{
     margin: 2%;
+    background: #F0F0F0;
+    color: #362E34;
 }
+.review3 img{
+    margin-bottom: 5%;
+}
+
+/* ABOUT PAGE CSS*/
+
