@@ -11,9 +11,66 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     color: #4f4f4f;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;    
     background-color: #fffafa;
+}
+h1{
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 10% 5%;
+}
+
+h1, h2, h3{
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+header{
+    height: 45vh;
+    background-image: url("/assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    height: 7vh;
+    background-color: #0E7C7B;
+    justify-content: space-evenly;
+}
+button{
+    flex: 1;
+    background-color: #0E7C7B;
+    color: white;
+}
+.logo{
+    text-align: center;
+    padding: 3% 0;
+}
+.logo img{
+    width: 70%;
+}
+.testimonials{
+    display: flex;
+    flex-direction: column;
+}
+.testimonial-text-box{
+    padding: 2%;
+    background-color: #f0f0f0;
+}
+.usersSay{
+    display: flex;
+    flex-direction: row;
+    
+    padding: 3%;
+}
+
+footer button{
+    width: 90%;
+    height: 7vh;
+    margin: 10% 5% 5% 5%;
+    border-radius: 5px;
 }
