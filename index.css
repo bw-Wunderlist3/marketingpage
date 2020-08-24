@@ -50,9 +50,9 @@ max-width:100%;
 }
 
 /* General CSS*/
-/* *{
+*{
     border: 1px aquamarine solid;
-} */
+}
 html{
     font-size:62.5%;
 }
@@ -101,19 +101,23 @@ nav{
     justify-content: flex-end;
     width: 20%;
     padding-left: 5%;
-    
+    padding-bottom: 2%;
+    padding-top:2%;
 }
+
 .signUpNav{
     text-align: center;
     background: #0E7C7B;
     margin: 5%;
     padding: 5%;
+    border-radius: 8px;
 }
 .signInNav{
     text-align: center;
     background: #F0F0F0;
     margin: 5%;
     padding: 5%;
+    border-radius: 8px;
 }
 
 /* Main Title*/
@@ -159,6 +163,14 @@ i{
     padding: 5%;
 }
 
+.signUp h3{
+    background: #0E7C7B;;
+    border-radius: 8px;
+    width:30%;
+    margin-left: 35%;
+    margin-right: 65%;
+}
+
 /*Reviews*/
 footer{
     display: flex;
@@ -188,3 +200,47 @@ footer{
 
 /* ABOUT PAGE CSS*/
 
+/*header*/
+
+.aboutHeroImage{
+    display: flex;
+    justify-content: center;
+    background-image: url('Images/dan-cristian-padure-Ba8700bbZp4-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 40vh;
+}
+
+/* Title */
+.aboutMainTitle{
+   padding-top: 7%;
+}
+.aboutMainTitle h1{
+    color: white;
+}
+
+/* Main Content */
+
+.teamMembers{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin:10%;
+        text-align: center;
+}
+.teamMember{
+    /* display: flex;
+    justify-content: space-evenly; */
+    width: 30%;
+    background: #F0F0F0;
+    /* flex-wrap: wrap;
+    margin: 2%; */
+}
+
+/* footer */
+footer{
+    background: #0E7C7B;
+    padding: 5%;
+    margin: 0;
+}
