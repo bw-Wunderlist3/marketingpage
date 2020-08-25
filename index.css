@@ -20,20 +20,25 @@ body{
 h1{
     font-weight: bold;
     font-size: 3rem;
-    padding: 10% 5%;
+}
+h3{
+    text-align: left;
 }
 
-h1, h2, h3{
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+h1, h2, h3 {
+    -webkit-text-fill-color: white; 
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
 header{
     height: 50vh;
-    background-image: url("/assets/background.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("assets/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.intro{
+    padding:10%;
 }
 nav{
     display: flex;
@@ -45,6 +50,10 @@ button{
     flex: 1;
     background-color: #0E7C7B;
     color: white;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+
 }
 .logo{
     text-align: center;
@@ -52,16 +61,17 @@ button{
 }
 .logo img{
     width: 70%;
+    max-width: 300px;
 }
 
 /* Testimonial Styling */
-.testimonials{
+.testimonial{
     display: flex;
     flex-direction: column;
 }
 .userpic{
-    height: 20vh;
-    width: 60%;
+    min-width: 60%;
+    height: 30vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -79,21 +89,118 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 2%;
-    height: 20vh;
+    padding: 4%;
     background-color: #f0f0f0;
+    font-size: 2.2rem;
+}
+.testimonial-text-box p {
+    line-height: 1.7;
+    padding: 2% 0 0 0;
 }
 .usersSay{
     display: flex;
-    flex-direction: row;
-    padding: 3%;
+    flex-direction: column;
+    padding: 7% 4%;
+    flex-grow: 1;
 }
 
 /* Footer button Style */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:3%;
+}
 footer button{
     width: 90%;
     height: 7vh;
-    margin: 10% 5% 5% 5%;
-    border-radius: 5px;
     font-size: 2rem;
 }
+.logo-footer{
+    display: none;
+}
+
+/* about page styling */
+.about{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("assets/about-background.jpg");
+}
+.gallery{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+.gallery div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 1% 0;
+    max-width: 45%;
+    padding: 0;
+}
+
+
+@media only screen and (min-width: 700px) {
+/* Tablet styles */
+    h1{
+        font-size: 4rem;
+    }   
+    nav{
+        justify-content: unset;
+    }
+    .about-nav{
+        order: 1;
+        margin-right: auto;
+        margin-left: 2%;   
+    }
+    .signup-nav{
+        order: 2;
+        background-color: #F0F0F0;
+
+    }
+    .login-nav{
+        order: 3;
+        margin: 0 2%;
+    }
+    button{
+        flex-grow: unset;
+        font-size: 2.4rem;
+        height: 4vh;
+    }
+    .logo{
+        display:none;
+    }
+    .testimonial{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .usersSay{
+        padding: 2% 2% 2% 2%;
+    }
+    .userpic{
+        width: 100%;
+    }
+ 
+    .logo-footer {
+        display: block;
+        text-align: center;
+    }
+    .logo-footer img {
+        padding: 10% 0 0 0;
+    }
+    .gallery div{
+        max-width: 30%;
+
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    /* bigger screen */
+
+    .gallery div{
+        max-width: 22%;
+
+    }
+    }
