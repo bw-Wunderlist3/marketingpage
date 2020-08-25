@@ -160,6 +160,7 @@ footer a{
     nav{
         justify-content: flex-start;
         padding: 10px 10px;
+        min-height: unset;
     }
     nav a{
         padding: 3px;
