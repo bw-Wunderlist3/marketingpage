@@ -17,6 +17,9 @@ body{
     font-family: 'Poppins', sans-serif;    
     background-color: #fffafa;
 }
+a{
+    text-decoration: none;
+}
 h1{
     font-weight: bold;
     font-size: 3rem;
@@ -31,7 +34,7 @@ h1, h2, h3 {
     -webkit-text-stroke-color: black;
 }
 header{
-    height: 50vh;
+    /* height: 50vh; */
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("assets/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,18 +45,24 @@ header{
 }
 nav{
     display: flex;
-    height: 7vh;
+    min-height: 10vh;
     background-color: #0E7C7B;
     justify-content: space-evenly;
 }
-button{
-    flex: 1;
+nav a, footer a {
     background-color: #0E7C7B;
     color: white;
-    padding: 0;
+    padding: 5px;
     border: none;
     border-radius: 5px;
-
+    margin: auto;
+}
+nav a:hover, footer a:hover{
+    background-color: #F0F0F0;
+    color: #0E7C7B;
+}
+.container {
+    margin:auto;
 }
 .logo{
     text-align: center;
@@ -110,8 +119,10 @@ footer {
     flex-direction: column;
     align-items: center;
     padding:3%;
+    text-align: center;
+    line-height: 7vh;
 }
-footer button{
+footer a{
     width: 90%;
     height: 7vh;
     font-size: 2rem;
@@ -145,23 +156,27 @@ footer button{
 /* Tablet styles */
     h1{
         font-size: 4rem;
-    }   
+    } 
     nav{
-        justify-content: unset;
+        justify-content: flex-start;
+        padding: 10px 10px;
     }
-    .about-nav{
+    nav a{
+        padding: 3px;
+    }  
+    .container{
+        margin: 0;
+    }
+    .about-container{
         order: 1;
-        margin-right: auto;
-        margin-left: 2%;   
     }
-    .signup-nav{
+    .signup-container{
         order: 2;
-        background-color: #F0F0F0;
-
+        margin-left: auto;
     }
-    .login-nav{
-        order: 3;
-        margin: 0 2%;
+    .login-container{
+        order: 4;
+        margin-left: 15px;
     }
     button{
         flex-grow: unset;
@@ -198,9 +213,11 @@ footer button{
 
 @media only screen and (min-width: 900px) {
     /* bigger screen */
-
+    nav a {
+        font-size: 2rem;
+    }
     .gallery div{
         max-width: 22%;
 
     }
-    }
+}
