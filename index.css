@@ -83,6 +83,17 @@ h3{
 a{
   text-decoration: none;  
 }
+a:visited {
+    color: inherit;
+}
+/* .signInNav a:visited{
+    color: #362E34;
+}
+.signUpNav a:visited{
+    color: white;
+} */
+
+
 /*header*/
 nav{
     display: flex;
@@ -132,6 +143,8 @@ nav{
     background:#F0F0F0;
     color:#362E34;
 }
+
+
 .signInNav{
     text-align: center;
     background: #F0F0F0;
@@ -144,6 +157,10 @@ nav{
     color: white;
     background: #0E7C7B;
 }
+
+/* .signInNav a:visited{
+    color: #362E34;
+} */
 
 /* Main Title*/
 .mainHeroImage{
