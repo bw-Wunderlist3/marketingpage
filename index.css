@@ -268,7 +268,7 @@ footer{
     border-radius: 10%;
 }
 
-/* Mobel 500px CSS */
+/* Mobile 500px CSS */
 
 @media(max-width: 500px){
 
@@ -321,8 +321,9 @@ footer{
     .features{
         flex-direction: column;
     }
+
     .signUp h3{
-        width: 50%;
+        width: 90%;
         margin: auto;
     }
 
@@ -348,5 +349,33 @@ footer{
         background-size: contain;
         background-attachment: local;
     }
+
+    }
+
+    @media (max-width: 800px){
+
+        /* nav*/
+       .login{
+           width: 50%;
+           margin: auto;
+           flex-direction: column;
+       }
+       .wanderListNav{
+           width: 40%;
+           margin: auto;
+       }
+       .aboutUsNav{
+           width: 50%;
+           margin: auto;
+       }
+       /*main title*/
+       .mainHeroImage{
+           height: 60vh;
+       }
+
+       /* About Page*/
+       .aboutHeroImage{
+           height: 30vh;
+       }
 
     }
