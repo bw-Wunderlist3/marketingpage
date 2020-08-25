@@ -95,6 +95,10 @@ nav{
     margin-top: 8%;
     margin-bottom: 0%;
 }
+
+.aboutUsNav h3:hover{
+    color: #0E7C7B;
+}
 .wanderListNav{
     /* text-align: center;
     padding-left:10% */
@@ -121,6 +125,12 @@ nav{
     margin: 5%;
     padding: 5%;
     border-radius: 8px;
+    color: white;
+}
+
+.signUpNav:hover{
+    background:#F0F0F0;
+    color:#362E34;
 }
 .signInNav{
     text-align: center;
@@ -128,6 +138,11 @@ nav{
     margin: 5%;
     padding: 5%;
     border-radius: 8px;
+}
+
+.signInNav:hover{
+    color: white;
+    background: #0E7C7B;
 }
 
 /* Main Title*/
@@ -180,6 +195,12 @@ i{
     margin-left: 35%;
     margin-right: 65%;
     color: #362E34;
+}
+
+.signUp h3:hover{
+    background: #0E7C7B;
+    border: 4px #362E34 solid;
+    color: white;
 }
 
 /*Reviews*/
