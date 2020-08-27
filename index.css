@@ -80,6 +80,13 @@ h3{
     font-size: 3rem;
     color:  #362E34;
 }
+h4{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+h5{
+    font-style: italic;
+}
 a{
   text-decoration: none;  
 }
@@ -177,7 +184,7 @@ i{
 /*Sign Up page break*/
 .signUp{
     text-align: center;
-    padding: 5%;
+    padding: 10% 5%;
 }
 .signUp h3{
     border: 3px #0E7C7B solid;
@@ -188,6 +195,30 @@ i{
 }
 .signUp h3:hover{
     background: #0E7C7B;
-    border: 4px #362E34 solid;
+    border: 3px #362E34 solid;
     color: white;
+}
+
+/*Testimonial review styling*/
+gallery{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.review{
+  margin: 15% 2%;
+  background: #F0F0F0;
+  color: #362E34;
+  border-radius: 10% 10% 0 0;
+  text-align: left;
+}
+.review p {
+    padding-bottom: 6%;
+}
+
+.review img{
+    border-radius: 10%;
+}
+.review h4, h5, p{
+    padding-left: 5%;
 }
