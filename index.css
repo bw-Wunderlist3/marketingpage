@@ -28,7 +28,7 @@ h3{
     text-align: left;
 }
 h4 {
-    line-height: 3;
+    line-height: 2;
 }
 
 h1, h2, h3 {
@@ -116,6 +116,30 @@ nav a:hover, footer a:hover{
     flex-grow: 1;
 }
 
+/*Feature card styling also inside of about page styling*/
+.features {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.features .featureCard {
+    align-items: center;
+    padding: 7% 4%;
+    flex-grow: 1;
+    margin: 7% 4%;
+}
+.featureCard h4{
+    font-size: 2rem;
+}
+.featureCard p {
+    font-size: 2rem;
+    padding: 2%;
+}
+.featureIcon{
+    max-width: 100%;
+    margin: 4%;
+}
+
 /* Footer button Style */
 footer {
     display: flex;
@@ -138,23 +162,22 @@ footer a{
 .about{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("assets/about-background.jpg");
 }
-.aboutCard{
-    background-color: #F0F0F0;
-}
+
 .gallery{
     display: flex;
     flex-flow:row wrap;
     justify-content: space-evenly;
     padding: 2%;
 }
-.gallery div{
+.aboutCard, .featureCard{
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 1.4rem;
     margin: 1% 0;
     padding: 0;
-    align-items: center;
+    align-items: center;    
+    background-color: #F0F0F0;
 }
 
 .flip-card {
@@ -251,6 +274,10 @@ footer a{
     .userpic{
         width: 100%;
     }
+    .features .featureCard {
+        max-width: 42%;
+        margin: 0 0 3% 0;
+    }
  
     .logo-footer {
         display: block;
@@ -263,8 +290,21 @@ footer a{
 
 @media only screen and (min-width: 900px) {
     /* bigger screen */
-    nav a {
-        font-size: 2rem;
+
+    .features h4 {
+        font-size: 4rem;
+    }
+    .features p {
+        font-size: 3rem;
     }
 
+}
+
+@media only screen and (min-width: 1500px) {
+       nav a {
+        font-size: 4rem;
+    }
+    h1{
+        font-size: 9rem;
+    } 
 }
