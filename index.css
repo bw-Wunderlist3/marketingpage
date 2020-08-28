@@ -199,6 +199,7 @@ i{
     width: 90%;
     margin: auto;
     color: #362E34;
+    transition: 0.5s;
 }
 .signUp h3:hover{
     background: #0E7C7B;
